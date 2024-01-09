@@ -1,29 +1,61 @@
 import random
+from hgmtools import anime_list
 
-anime_list = ["Naruto", "Dragon Ball", "One Piece", "Shingeki no Kyojin", "Death Note", "Fullmetal Alchemist", "Boku no Hero Academia", "Sword Art Online", "Tokyo Ghoul", 
-"Kimetsu no Yaiba", "Cowboy Bebop", "Hunter x Hunter", "Spirited Away", "One Punch Man", "Bleach", "Fairy Tail", "Pokemon", "Your Lie in April", "Death Parade", "Code Geass", 
-"JoJo", "Haikyuu", "Yakusoku no Neverland", "Steins Gate", "Black Clover", "Naruto Shippuden", "Mob Psycho 100", "Inuyasha", "Beastars", "Jujutsu Kaisen", "Trigun", 
-"Assassination Classroom", "Durarara", "Parasyte", "Toradora", "Great Teacher Onizuka", "Erased", "Akira", "Dorohedoro", "Hellsing", "Tokyo Revengers", 
-"Made in Abyss", "A Silent Voice", "Blue Exorcist", "Charlotte", "Soul Eater", "Nanatsu no Taizai", "Re Zero", "Pandora Hearts", "Psycho-Pass", "Noragami", "Black Butle", 
-"Dororo", "Chainsaw Man", "Blue Lock", "Shaman King", "Dr Stone", "Detective Conan", "Fire Force", "Viland Saha"]
+def has_multiple_words(input_string):
+    words = input_string.split()
+    return len(words) > 1
+
+
+def print_random_anime(anime):
+    if type(anime) != list:
+        dach = []
+        c1 = len(anime) - 1
+        ch = c1 // 2
+        nw_anime = anime[1:ch] + anime[ch + 1:c1 - 1]
+        for i in nw_anime:
+            dach.append('-')
+        dach = ''.join(dach)
+        c2 = len(dach)
+        all_name = anime[0] + dach[:c2 // 2 + 1] + anime[ch] + dach[(c2 // 2):] + anime[c1]
+        return all_name
+    else:
+        dach = []
+        for i in anime:
+            for j in i:
+                l1 = len(i) - 1
+                l1h = l1 // 2
+                if l1 == 1 or l1 == 2:
+                    if l1 == 1:
+                        dach.append(i)
+                    else:
+                        dach.append(i[0]+'-')
+                elif l1 == 3:
+                    dach.append(i[0]+'-'+i[l1])
+                else:
+                    dach2 = []
+                    nw_anime = i[1:l1h] + i[l1h + 1:l1 - 1]
+                    for i in nw_anime:
+                        dach2.append('-')
+                    dach = ''.join(dach2)
+                    l2 = len(dach)
+                    print(dach)
+                    #dach = i[0] + dach[:(l2 // 2) + 1] + i[l1h] + dach[(l2 // 2):] + i[l1]
+
+        
+                
 
 random_anime = random.choice(anime_list)
+
 print(random_anime)
-len_random = len(random_anime)
-midl = len_random // 2
-print(midl)
-print(len_random)
 
-for chr in random_anime:
-    if chr == ' ':
-        idx = random_anime.index(chr)
-        #print(idx, end="")
+new_random = has_multiple_words(random_anime)
+if new_random == True:
+    new_random = random_anime.split()
+    t = print_random_anime(new_random)
+    print(t)
 
-        print(' ', end='')
-        print(f'{chr} ({idx})', end='')
-        #random_anime = random_anime.replace(random_anime[idx], '*')
-    elif (chr == random_anime[0]) or (chr == random_anime[midl]) or (chr == random_anime[len_random -2]):
-        print(chr, end='')    
-    else:
-        print('-', end='')
-print("")
+else:
+    t = print_random_anime(random_anime)
+    print(t)
+
+print(new_random)
