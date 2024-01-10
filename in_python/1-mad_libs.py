@@ -8,4 +8,9 @@ animal = input("Animal: ")
 number = input("Number: ")
 
 # Construct and print a whimsical short story using the user-provided inputs.
-print("Once upon a time, in a land filled with {}, there lived a {} and {} group of {} wolves. One day, as they {} by the river, a mysterious {} appeared.\nThe wolf spoke in {} different languages and shared tales of its adventures.\nThe wolves were amazed and decided to join the wolf on a journey to explore the {} unknown. And so, their {} adventure began, filled with laughter, surprises, and {}.\nThe end.".format(noun, adj, adverb, color, verb, animal, number, adverb, adj, noun))
+print('''Once upon a time, in a land filled with {}, there lived a {} and {} group of {} wolves.
+One day, as they {} by the river, a mysterious {} appeared.
+The wolf spoke in {} different languages and shared tales of its adventures.
+The wolves were amazed and decided to join the wolf on a journey to explore the {} unknown.
+And so, their {} adventure began, filled with laughter, surprises, and {}.\nThe end.'''
+.format(noun, adj, adverb, color, verb, animal, number, adverb, adj, noun))
