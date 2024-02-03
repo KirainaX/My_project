@@ -1,0 +1,4 @@
+talaja_prx = {"Compressor 1/4 R134a": "450" ,"Compressor 1/4 R600a": "450" ,"Filter 15g": "7.50", "Filter 20g": "8.50", "Filter 30g": "10.50", "Capilre": "10", "Relie 7ajra": "10", 
+         "Klixon k7al": "9", "Thermostat 3adiya": "18", "Thermostat 9sira": "30", "Thermostat twila": "30", "Plaka 125L": "60", "Plaka 230L": "90", "Plaka 290L": "110", 
+         "Plaka 500L": "135", "Plaka 800L": "190", "Valve Avee Tige": "4.50", "Valve sans Tige": "3.50", "Valve Rapid": "15", "Coutube P.T": "15", "Condensseur 1/4": "50", 
+         "Condensseur 1/5": "50", "R 134 1kg": "85", "R 134 3kg": "220", "R 134 1kg A.V": "100", "R 600 3kg": "220"}

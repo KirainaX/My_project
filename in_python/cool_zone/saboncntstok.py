@@ -1,0 +1,3 @@
+sabon_cnt = {"Motor lavag": "10", "Motor essorag": "10", "Polé 11": "0", "Polé 10": "10", "Polé carie": "10", "Capacité noir": "10", "Baga carie": "10", "Baga 11": "10", "Baga 10": "10", 
+         "Sofflie P.T": "10", "Sofflie G.T": "10", "Minitrie 6 filles": "3", "Minitrie essorag": "10", "Minitrie 3 filles": "10", "Minitrie double": "10", "Teyou vidange": "10", 
+         "Faraka 10": "1", "Faraka carie": "10", "Vontosa noir": "0", "Rousoul": "10"}
