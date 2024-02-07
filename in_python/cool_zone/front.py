@@ -16,5 +16,6 @@ while True:
     else:
         if userInput == 1:
             dakhal_sal3a()
+            break
         #elif userInput == 2:
         #elif userInput == 3:

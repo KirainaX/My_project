@@ -1,7 +1,7 @@
-#read data from text file
 productDict = {}
 fileList = []
 list = []
+#read data from text file
 myFile = open("refrigerator_quantity.txt")
 
 L = myFile.readlines()
@@ -11,7 +11,6 @@ myFile.close()
 fileList = [s[:-1] if s.endswith('\n') else s for s in L]
 print(fileList)
 
-print(fileList)
 for itme in fileList:
     itmeName = itme.split()[0]
     itmePrice = itme.split()[1]
@@ -25,3 +24,11 @@ with open("refrigerator_quantity.txt", 'w') as f:
     for k, v in productDict.items():
         product = k + ' ' + str(v) + '\n'
         f.write(product)
+
+
+'''for i in talajaFileList:
+    iName = i.split()[0]
+    iPrice = i.split()[1]
+    talajaDict.update({iName: iPrice})
+for k, v in talajaDict.items():
+    print(f"{k}: {v}")'''
