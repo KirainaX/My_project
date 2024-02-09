@@ -1,4 +1,4 @@
-Compressor-1/4-R134a 99
+Compressor-1/4-R134a 122
 Compressor-1/4-R600a 99
 Filter-15g 99
 Filter-20g 99

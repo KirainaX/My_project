@@ -19,8 +19,8 @@ def dakhal_sal3a():
 
                 p = input("dakhal smiya dyal sal3a : ")
                 c = input("dakhal kamiya dyal had sal3a: ")
-                talajaList.append(p.replace(' ', '-'))
-                talajaList.append(c)
+                talajaList.append(p.replace(' ', '-')+' '+c)
+                #talajaList.append()
                 jawab = input("ba9i ba4i dakhal sal3a? dakhal 'a' ila knty adakhal mazal awla dakhal 'l' ila knty sf atkhroj: ")
 
                 while jawab.lower() not in cut:

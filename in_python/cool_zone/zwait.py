@@ -32,3 +32,9 @@ with open("refrigerator_quantity.txt", 'w') as f:
     talajaDict.update({iName: iPrice})
 for k, v in talajaDict.items():
     print(f"{k}: {v}")'''
+
+
+
+'''for k, v in talajaDict.items():
+        k = k.replace('-', ' ')
+        print(f"{k}: {v}")'''
