@@ -60,7 +60,7 @@ def sabon_cont(sabonList):
         itemPrice = item.split()[1]
         sabonDict.update({itemName: itemPrice})
         
-        print(f"{itemName}: {itemPrice}")
+    
     
     # Parse each item in sabonList to extract names and prices, and store them in newsabonDict
     print("======")
@@ -68,16 +68,14 @@ def sabon_cont(sabonList):
         itemName = item.split()[0]
         itemPrice = item.split()[1]
         newsabonDict.update({itemName: itemPrice})
-        
-        print(f"{itemName}: {itemPrice}")
 
     # Update the quantities in sabonDict based on newsabonDict
     for itemName, itemPrice in newsabonDict.items():
         for oldItemPrice in sabonDict.values():
             if itemName in sabonDict.keys():
                 sabonDict[itemName] = int(itemPrice) + int(oldItemPrice)
-                
-
+    print(sabonDict)
+    
     # Write the updated quantities to the washing machine file
     with open("washing_machine_quantity.txt", 'w') as f:
         for itemName, itemQuantity in sabonDict.items():

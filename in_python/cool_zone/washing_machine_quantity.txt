@@ -1,7 +1,7 @@
-Motor-lavag 10
-Motor-essorag 10
-Polé-11 4
-Polé-10 6
+Motor-lavag 3
+Motor-essorag 3
+Polé-11 3
+Polé-10 3
 Polé-carie 10
 Capacité-noir 10
 Baga-carie 1
