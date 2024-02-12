@@ -1,7 +1,7 @@
 Motor-lavag 3
 Motor-essorag 3
-Polé-11 3
-Polé-10 3
+Polé-11 13
+Polé-10 13
 Polé-carie 10
 Capacité-noir 10
 Baga-carie 1
@@ -17,4 +17,4 @@ Teyou-vidange 1
 Faraka-10 1
 Faraka-carie 1
 Vontosa-noir 1
-Rousoul 1
+Rousoul 20

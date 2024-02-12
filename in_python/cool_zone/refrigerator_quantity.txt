@@ -1,9 +1,9 @@
-Compressor-1/4-R134a 122
+Compressor-1/4-R134a 132
 Compressor-1/4-R600a 99
 Filter-15g 99
 Filter-20g 99
 Filter-30g 99
-Capilre 99
+Capilre 100
 Relie-7ajra 99
 Klixon-k7al 99
 Thermostat-3adiya 99
