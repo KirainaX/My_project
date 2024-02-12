@@ -12,9 +12,9 @@ Sofflie-G.T 1
 Minitrie-6-filles 1
 Minitrie-essorag 1
 Minitrie-3-filles 1
-Minitrie-double 1
+Minitrie-double 2
 Teyou-vidange 1
-Faraka-10 1
+Faraka-10 2
 Faraka-carie 1
 Vontosa-noir 1
 Rousoul 20

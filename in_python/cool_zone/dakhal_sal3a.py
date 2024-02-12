@@ -5,7 +5,7 @@ def dakhal_sal3a():
     sabonList = []   # List to store inputs related to washing machines
     
     # Instructions for the user
-    print("Fin ba4i dakhal sal3a?")
+    print("==> Fin ba4i dakhal sal3a?")
     print("     • Ila 4adi dakhal sal3a dyal talajat dakhal ra9am '1'")
     print("     • Ila 4adi dakhal sal3a dyal makinat sabon dakhal ra9am '2'")
     
@@ -40,38 +40,38 @@ def dakhal_sal3a():
             sal3a = int(sal3a)
             if sal3a == 1:  # If user chooses refrigerators
                 while True:
-                    p = input("dakhal smiya dyal sal3a: ")  # Prompting for refrigerator name
+                    p = input("• dakhal smiya dyal sal3a: ")  # Prompting for refrigerator name
                     while p not in talajaDict.keys():  # Validating if entered name exists in dictionary
-                        print("had smiya li dakhalty mkynach fstok!")
-                        p = input("3awd dakhal smiya dyal sal3a: ")
+                        print("==> had smiya li dakhalty mkynach fstok!")
+                        p = input("• 3awd dakhal smiya dyal sal3a: ")
                         if p in talajaDict:  # If name exists, continue to next step
                             continue
-                    c = input("dakhal kamiya dyal had sal3a: ")  # Prompting for quantity
+                    c = input("• dakhal kamiya dyal had sal3a: ")  # Prompting for quantity
                     talajaList.append(p.replace(' ', '-') + ' ' + c)  # Appending input to the list
-                    jawab = input("ba9i ba4i dakhal sal3a? dakhal 'a' ila knty adakhal mazal awla dakhal 'l' ila knty sf atkhroj: ")
+                    jawab = input("==> ba9i ba4i dakhal sal3a?\ndakhal 'a' ila knty adakhal sal3a akhra\ndakhal 'l' ila knty sf atkhroj: ")
                     while jawab.lower() not in ['a', 'l']:  # Validating user's response
-                        print("==> madakhaltich ikhtiyar s7i7 :(")
-                        jawab = input("ba9i ba4i dakhal sal3a? dakhal 'a' ila knty adakhal mazal awla dakhal 'l' ila knty sf atkhroj: ")
+                        print("• madakhaltich ikhtiyar s7i7 :(")
+                        jawab = input("==> ba9i ba4i dakhal sal3a?\ndakhal 'a' ila knty adakhal sal3a akhra\ndakhal 'l' ila knty sf atkhroj: ")
                     if jawab.lower() == 'l':  # If user wants to exit, break the loop
                         break
             elif sal3a == 2:  # If user chooses washing machines
                 while True:
-                    p = input("dakhal smiya dyal sal3a: ")  # Prompting for washing machine name
+                    p = input("==> dakhal smiya dyal sal3a: ")  # Prompting for washing machine name
                     while p not in sabonDict.keys():  # Validating if entered name exists in dictionary
-                        print("had smiya li dakhalty mkynach fstok!")
-                        p = input("3awd dakhal smiya dyal sal3a: ")
+                        print("• had smiya li dakhalty mkynach fstok!")
+                        p = input("==> 3awd dakhal smiya dyal sal3a: ")
                         if p in sabonDict:  # If name exists, continue to next step
                             continue
-                    c = input("dakhal kamiya dyal had sal3a: ")  # Prompting for quantity
+                    c = input("• dakhal kamiya dyal had sal3a: ")  # Prompting for quantity
                     sabonList.append(p.replace(' ', '-') + ' ' + c)  # Appending input to the list
-                    jawab = input("ba9i ba4i dakhal sal3a? dakhal 'a' ila knty adakhal mazal awla dakhal 'l' ila knty sf atkhroj: ")
+                    jawab = input("==> ba9i ba4i dakhal sal3a?\ndakhal 'a' ila knty adakhal sal3a akhra\ndakhal 'l' ila knty sf atkhroj: ")
                     while jawab.lower() not in ['a', 'l']:  # Validating user's response
                         print("==> madakhaltich ikhtiyar s7i7 :(")
-                        jawab = input("ba9i ba4i dakhal sal3a? dakhal 'a' ila knty adakhal mazal awla dakhal 'l' ila knty sf atkhroj: ")
+                        jawab = input("==> ba9i ba4i dakhal sal3a?\ndakhal 'a' ila knty adakhal sal3a akhra\ndakhal 'l' ila knty sf atkhroj: ")
                     if jawab.lower() == 'l':  # If user wants to exit, break the loop
                         break
         else:
-            print("dakhalty ra9am mkynch bin [1, 2] dakhal wa7ad fihom")  # Error message for invalid input
+            print("==> dakhalty ra9am mkynch bin [1, 2] dakhal wa7ad fihom")  # Error message for invalid input
             continue
         break  # Exit the loop when done with user inputs
     
