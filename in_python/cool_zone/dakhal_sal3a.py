@@ -36,11 +36,12 @@ def dakhal_sal3a():
         # Prompting user for input
         sal3a = input("==> dakhal ra9am liba4i: ")
         
-        if sal3a.isdigit():  # Checking if input is a digit
+        if sal3a.isdigit(): # Checking if input is a digit
             sal3a = int(sal3a)
             if sal3a == 1:  # If user chooses refrigerators
                 while True:
-                    p = input("• dakhal smiya dyal sal3a: ")  # Prompting for refrigerator name
+                    p = input("• dakhal smiya dyal sal3a: ")# Prompting for refrigerator name
+                    p = p.replace(' ', '-')
                     while p not in talajaDict.keys():  # Validating if entered name exists in dictionary
                         print("==> had smiya li dakhalty mkynach fstok!")
                         p = input("• 3awd dakhal smiya dyal sal3a: ")
@@ -57,6 +58,7 @@ def dakhal_sal3a():
             elif sal3a == 2:  # If user chooses washing machines
                 while True:
                     p = input("==> dakhal smiya dyal sal3a: ")  # Prompting for washing machine name
+                    p = p.replace(' ', '-')
                     while p not in sabonDict.keys():  # Validating if entered name exists in dictionary
                         print("• had smiya li dakhalty mkynach fstok!")
                         p = input("==> 3awd dakhal smiya dyal sal3a: ")
